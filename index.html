@@ -1,1 +1,119 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>viv - portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/juice-boxes.gif" class="logo">
+                <!-- placeholder logo image -->
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>hello~ my name is vivian</p>
+                <h1>I draw, design, code, and make things.</h1>
+                <!-- add span tag to change text color -->
+            </div>
+        </div>
+    </div>
+<!-- ------------------------------------------------------------------------- -->
+    <!-- -------------------ABOUT-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-c1"><img src="images/dance.gif"></div>
+                <div class="about-c2">
+                    <h1 class="subtitle">about me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI</span><br>graphic design</li>
+                            <li><span>social media</span><br>video editing</li>
+                            <li><span>html/css</span><br>javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>april 2021 - current</span><br>communications assistant // institute on the formation of knowledge</li>
+                            <li><span><br>april 2022 - current</span><br>editor-in-chief // moda blog</li>
+                            <li><span><br>march 2022 - september 2022</span><br>contributor // smart museum of art</li>
+                            <li><span><br>june 2022 - august 2022</span><br>intern // hindman auctions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>university of chicago</li>
+                            <li><span><br>2015 - 2019</span><br>BASIS independent silicon valley</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------portfolio-------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">about my art</h1>
+        <div class="portfolio-list">
+            <div>
+                <h2>HYPERMEDIA</h2>
+                <p>code-based art & animation<br>&nbsp</p>
+                <a href="#">explore</a>
+            </div>
+            <div>
+                <h2>DESIGN</h2>
+                <p>figma, adobe illustrator & canva<br>&nbsp</p>
+                <a href="#">explore</a>
+            </div>
+            <div>
+                <h2>DIGITAL ART</h2>
+                <p>adobe photoshop & fresco<br>&nbsp</p>
+                <a href="#">explore</a>
+            </div>
+            <div>
+                <h2>PAINTING</h2>
+                <p>oil, acrylic, watercolor & gouache<br>&nbsp</p>
+                <a href="#">explore</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
