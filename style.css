@@ -97,6 +97,10 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
+.about-c2 p span {
+    color: plum;
+}
+
 .subtitle {
     font-size: 60px;
     font-weight: 600;
@@ -147,7 +151,109 @@ nav ul li a:hover::after {
     display: block;
 }
 
-.portfolio-list {
+/* ------------portfolio--------------- */
+
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0), plum);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-size: 30px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.5);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid plum;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: plum;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: plum;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* -----------------------------css for small screen-------------- */
+
+@media only screen and (max-w: 600px) {
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+}
+
+
+/* -------------------------------not used section------------------- */
+/* .portfolio-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -160,6 +266,7 @@ nav ul li a:hover::after {
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .portfolio-list div h2 {
@@ -181,3 +288,9 @@ nav ul li a:hover::after {
     font-size: 30px;
     background-color: plum;
 }
+
+.portfolio-list div:hover {
+    background: plum;
+    transform: translateY(-10px);
+
+} */
