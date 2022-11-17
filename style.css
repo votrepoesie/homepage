@@ -239,7 +239,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
-/* -----------------------------css for small screen-------------- */
+/* ---------------------------css for small screen-------------- */
 
 @media only screen and (max-w: 600px) {
     .header-text {
