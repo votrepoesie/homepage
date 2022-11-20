@@ -24,7 +24,7 @@
             </nav>
             <div class="header-text">
                 <p>nice to meet you :)</p>
-                <h1>I draw, design, code, and...<br>basically make things.</h1>
+                <h1>I draw, design, code, and make things.</h1>
                 <!-- add span tag to change text color -->
             </div>
         </div>
@@ -132,6 +132,21 @@
     }
 
 </script> -->
+
+<script>
+
+const tick = () => {
+    console.log("hello")
+    // document.body.style.background = "rgb("+(Math.random()*255)+","+(Math.random()*255)+","+(Math.random()*255)+")"
+    document.body.style.background = "rgb("+(Math.random()*255)+", 150, 230)"
+    setTimeout(tick, 1000)
+}
+
+tick()
+
+//thank you marc for writing this code!
+
+</script>
 
 </body>
 </html>
