@@ -82,6 +82,8 @@ nav ul li a:hover::after {
     grid-auto-rows: 100px 300px;
     grid-gap: 10px;
     grid-auto-flow: dense;
+    /* max-width: 2000px; */
+    
 }
 
 .gallery-item{
@@ -128,6 +130,11 @@ nav ul li a:hover::after {
 
 .gallery-item .layer h3 {
     font-size: 30px;
+}
+
+.gallery-item .layer p {
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 .layer a {
