@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graphic design</title>
+    <link rel="stylesheet" href="subpage.css">
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/juice-boxes.gif" class="logo">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="grid-gallery.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+ <article class="post">
+    <h2 id="change-color">GRAPHIC DESIGN<br>...............................</h2>
+
+
+    <h4>MODA at the University of Chicago</h4>
+    <p>Lorem ipsum dolor sit amet, </p>
+
+    <figure>
+        <img src="images/graphic design/MODA.png" alt="graphic design">
+    </figure>
+
+
+    <h4>Art Museum, the Chinese University of Hong Kong</h4>
+    <p>Lorem ipipsum dolor sit amet, consectetur</p>
+
+    <figure>
+        <img src="images/graphic design/art magazine.png" alt="graphic design">
+        <br>
+        <img src="images/graphic design/Art Magazine 1.png" alt="graphic design">
+    </figure>
+ </article>
+
+ <script>
+ const tick = () => {
+    console.log("hello")
+    // document.body.style.background = "rgb("+(Math.random()*255)+","+(Math.random()*255)+","+(Math.random()*255)+")"
+    // document.body.style.background = "rgb("+(Math.random()*255)+", 150, 230)"
+
+    document.getElementById('change-color').style.color = "rgb("+(Math.random()*255)+", 180, 230)"
+    setTimeout(tick, 400) //thank you marc for writing this piece of color-changing code!
+}
+
+tick()
+</script>
