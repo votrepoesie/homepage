@@ -126,6 +126,7 @@ nav ul li a:hover::after {
     padding: 0 40px;
     text-align: center;
     transition: height 0.5s;
+    border-radius: 15px;
 }
 
 .gallery-item .layer h3 {
