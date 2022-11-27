@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>graphic design</title>
     <link rel="stylesheet" href="subpage.css">
+    <script src="https://kit.fontawesome.com/ee186c3457.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -23,37 +24,81 @@
 </div>
 
 
- <article class="post">
+<article class="post">
     <h2 id="change-color">GRAPHIC DESIGN<br>...............................</h2>
 
 
     <h4>MODA at the University of Chicago</h4>
-    <p>Lorem ipsum dolor sit amet, </p>
-
+    <p>Since 2003, <a href="http://www.modachicago.org/" target="_blank">MODA</a> has been a platform dedicated to showcasing fashion on campus, promoting Chicago's style scene, and providing resources to students interested in fashion. Through our events, quarterly magazine publications, daily blog, and Designer Boot Camp program, MODA has established itself as one of the most prominent organizations at the University of Chicago.</p>
+    <p>For the past three years, I have had the pleasure to be a blog contributor, graphic designer, section editor, and now editor-in-chief.</p>
     <figure>
-        <img src="images/graphic design/MODA.png" alt="graphic design">
+        <img src="images/graphic design/designer profile.png" alt="graphic design">
+        <img src="images/graphic design/thank you for the music.gif" alt="gif">
+        <img src="images/graphic design/MODA.gif" alt="gif">
+        <img src="images/graphic design/in the garden.png" alt="graphic design">
+        <figcaption>I also directed this photoshoot! check it out <a href="http://www.modachicago.org/blog/2022/6/20/in-the-garden" target="_blank">here</a>.</figcaption>
     </figure>
 
+    <h4 style="color: thistle">......</h4>
 
+    <h4>Institute for the Formation of Knowledge</h4>
+
+    <p>I plan and execute social media and email marketing strategy with four team members, as well as regularly update website content, 
+    edit YouTube videos, and work on other projects as needed.
+    </p>
+    <p>
+    <i class="fa-solid fa-link"></i> <a href="https://ifk.uchicago.edu/" target="_blank">website</a> 
+    <br><i class="fa-solid fa-link"></i> <a href="https://www.instagram.com/IFK_UChicago/?hl=en" target="_blank">social media </a>
+    <br><i class="fa-solid fa-link"></i> <a href="https://mailchi.mp/uchicago/mapss-5694005" target="_blank">sample email campaign</a>
+    </p>
+
+    <h4 style="color: thistle">......</h4>
+ 
     <h4>Art Museum, the Chinese University of Hong Kong</h4>
-    <p>Lorem ipipsum dolor sit amet, consectetur</p>
+    <p>In summer of 2021, I remotely interned for the marketing department and created a digital magazine inspired by the museum's then-incoming exhibition. My contribution included five pieces of original writing (based on the exhibition catalog) and the designs for most of its layout.</p>
 
     <figure>
-        <img src="images/graphic design/art magazine.png" alt="graphic design">
-        <br>
         <img src="images/graphic design/Art Magazine 1.png" alt="graphic design">
+        <img src="images/graphic design/Art Magazine 2.png" alt="graphic design">
     </figure>
- </article>
 
- <script>
- const tick = () => {
+</article>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+
+<script>
+//thank you marc for teaching me the color-changing code!
+const tick = () => {
     console.log("hello")
-    // document.body.style.background = "rgb("+(Math.random()*255)+","+(Math.random()*255)+","+(Math.random()*255)+")"
-    // document.body.style.background = "rgb("+(Math.random()*255)+", 150, 230)"
-
     document.getElementById('change-color').style.color = "rgb("+(Math.random()*255)+", 180, 230)"
-    setTimeout(tick, 400) //thank you marc for writing this piece of color-changing code!
+    setTimeout(tick, 400) 
 }
 
 tick()
+
+//thank you w3schools for the button!
+
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 </script>
