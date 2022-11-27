@@ -75,12 +75,12 @@ nav ul li a:hover::after {
 /* ------------------image gallery------------------ */
 
 .g-container{
-    margin: 20px;
+    margin: 30px 100px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-auto-rows: 100px 300px;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-auto-flow: dense;
     /* max-width: 2000px; */
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eden</title>
+    <link rel="stylesheet" href="subpage.css">
+    <script src="https://kit.fontawesome.com/ee186c3457.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/juice-boxes.gif" class="logo">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="grid-gallery.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    <h2 id="change-color">EDEN<br>..........</h2>
+
+
+    <h4>nature & grotesque</h4>
+    <p id="poem">faeries, come take me out of this dull world
+    <br>for I would ride with you upon the wind
+    <br>fun on the top of the dishevelled tide
+    <br>and dance upon the mountains like a flame
+    <br>--- w.b. yeats</p>
+
+    <figure>
+        <img src="images/misc/age of capricorn.jpg" alt="eden">
+        <figcaption><span>age of capricorn (unfinished)</span> / acrylic, 48 x 36 inches</figcaption>
+        <img src="images/misc/garden snake.JPG" alt="eden">
+        <figcaption><span>garden snake</span> / watercolor, gouache & digital</figcaption>
+        <!-- <img src="images/misc/funeral flowers.JPG" alt="eden">
+        <figcaption><span>funeral flowers</span> / watercolor, gouache & digital</figcaption> -->
+        <img src="images/misc/thang-ga reimagined.jpeg" alt="eden">
+        <figcaption><span>tangka reimagined</span> / watercolor, gouache & digital</figcaption>
+        <!-- <img src="images/misc/mirror selfie.jpeg" alt="eden">
+        <figcaption><span>mirror mirror</span> / digital</figcaption> -->
+    </figure>
+
+</article>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
+
+
+
+
+
+<script>
+//thank you marc for teaching me the color-changing code!
+const tick = () => {
+    console.log("hello")
+    document.getElementById('change-color').style.color = "rgb("+(Math.random()*255)+", 180, 230)"
+    setTimeout(tick, 400) 
+}
+
+tick()
+
+//thank you w3schools for the button!
+
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>

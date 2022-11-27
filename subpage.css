@@ -62,6 +62,11 @@ nav ul li a:hover::after {
 }
 
 /* -------------------content-------------------- */
+
+span {
+    color: plum;
+}
+
 h2,h4 {
     color: plum;
     padding: 20px;
@@ -80,6 +85,15 @@ p {
     color: white;
     padding: 20px;
     line-height: 1.5;
+}
+
+#poem {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .post {
