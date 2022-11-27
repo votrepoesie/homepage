@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>past life</title>
+    <link rel="stylesheet" href="subpage.css">
+    <script src="https://kit.fontawesome.com/ee186c3457.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/juice-boxes.gif" class="logo">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="grid-gallery.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    <h2 id="change-color">PAST LIFE<br>...................</h2>
+
+
+    <h4>O guardian angel, I want to know the answer to life.</h4>
+    <p>There was a time when past life regression was trending online. My friend sent me a link, and I opened the video (a guided hour-long mediation) with both curiosity and skepticism. To my surprise, the experience turned out to be quite eye-opening. I created these illustrations in an attempt to remember what I had seen and heard. </p>
+    <p>Of course, there was no guardian angel, only the unconsicous voice in my head that knew much more than me.</p>
+    <figure>
+        <img src="images/past life/1.jpg" alt="past life">
+        <img src="images/past life/2.jpg" alt="past life">
+        <img src="images/past life/3.jpg" alt="past life">
+        <img src="images/past life/4.jpg" alt="past life">
+        <img src="images/past life/5.jpg" alt="past life">
+        <img src="images/past life/6.jpg" alt="past life">
+        <img src="images/past life/7.jpg" alt="past life">
+        <img src="images/past life/8.jpg" alt="past life">
+        <img src="images/past life/9.jpg" alt="past life">
+
+    </figure>
+</article>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
+
+
+
+
+
+<script>
+//thank you marc for teaching me the color-changing code!
+const tick = () => {
+    console.log("hello")
+    document.getElementById('change-color').style.color = "rgb("+(Math.random()*255)+", 180, 230)"
+    setTimeout(tick, 400) 
+}
+
+tick()
+
+//thank you w3schools for the button!
+
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
