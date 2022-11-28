@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oil painting</title>
+    <link rel="stylesheet" href="subpage.css">
+    <script src="https://kit.fontawesome.com/ee186c3457.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/juice-boxes.gif" class="logo">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="grid-gallery.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    <h2 id="change-color">OIL PAINTING<br>........................</h2>
+
+</article>
+
+</body>
+
+<script>
+    //thank you marc for teaching me the color-changing code!
+    const tick = () => {
+        console.log("hello")
+        document.getElementById('change-color').style.color = "rgb("+(Math.random()*255)+", 180, 230)"
+        setTimeout(tick, 400) 
+    }
+    
+    tick()
+    
+    //thank you w3schools for the button!
+    
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+    </script>
