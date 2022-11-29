@@ -63,6 +63,11 @@ nav ul li a:hover::after {
 
 /* -------------------content-------------------- */
 
+#poem {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 span {
     color: plum;
 }
@@ -88,6 +93,11 @@ p {
 }
 
 .onibaba {
+    margin: 0 auto;
+    align-content: center;
+}
+
+.moloch {
     margin: 0 auto;
     align-content: center;
 }
