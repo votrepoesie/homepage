@@ -87,8 +87,9 @@ p {
     line-height: 1.5;
 }
 
-#poem {
-    text-align: center;
+.onibaba {
+    margin: 0 auto;
+    align-content: center;
 }
 
 figcaption {

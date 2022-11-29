@@ -36,6 +36,8 @@
       experimenting with code-driven animation. 
     </p>
 
+<!-- --------------------------------------------------------------------------------------- -->
+
     <h4><i class="fa-solid fa-link"></i><a href="https://youtu.be/hQBVGgSY__o" target="_blank">mushroom</a> </h4>
     <p>
       This is a group project where I created the "viewing space" of disco tiles and dancing mushrooms. 
@@ -43,14 +45,15 @@
       I came up with this framework of me creating the foreground and the four of them making a video collage 
       for the background (Python, Stable Diffusion, P5js, and rotoscoping on AE).   
     </p>
+
     <figure>
       <img src="images/mushroom2.png" alt="my project">
       <figcaption>before the video collage was inserted</figcaption>
+      <img src="images/mushroom code.png" alt="code">
+      <figcaption>color-changing tiles that respond to amplitude</figcaption>
     </figure>
-    <p>
-      Code for dancing mushroom stem: <br> 
-      
-    </p>
+
+<!-- ------------------------------------------------------------------------------------- -->
 
     <h4><i class="fa-solid fa-link"></i> <a href="creature/index.html" target="_blank">creature</a></h4>
     <p>
@@ -58,6 +61,7 @@
       Check out the code on my <a href="https://github.com/votrepoesie/creature" target="_blank">Github</a>!
     </p>
 
+<!-- ------------------------------------------------------------------------------------- -->
 
     <h4><i class="fa-solid fa-link"></i> <a href="https://youtu.be/SD9Ow1Y71Z8" target="_blank">onibaba</a></h4>
     <p>
@@ -70,17 +74,30 @@
       <br>
       <br>The variable <span>c</span> is then used to manipulate opacity, scale, and color.
   </p>
+  <figure class="onibaba">
+    <img src="images/onibaba.gif" alt="a gif of my animation">
+  </figure>
+
+ <!-- ------------------------------------------------------------------------------------- -->
+
     <h4><i class="fa-solid fa-link"></i> <a href="https://youtu.be/Rw3VYQwF5Cc" target="_blank">spirograph</a></h4>
     <p>
       For my first project, I found a <a href="https://creativedojo.net/tutorial/spirographs/" target="_blank">spirograph preset</a> 
-      and manipulated its properties to respond to the amplitude of any song (audio to keyframe). The animation is finished off with a little motion blur.
-      <br><br>
-      For instance, the code for changing inner radius: 
-      <br><br><span style="font-family: monospace; font-size: 15px;">
-        temp = thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider");
-      <br>[temp * 50];</span>
+      and manipulated its properties to respond to the amplitude of any song (audio to keyframe). 
+      The animation is finished off with a little motion blur. <br><br>
+      For instance, the code for changing inner radius: <br><br>
+
+      <span style="font-family: monospace; font-size: 15px;">
+        temp = thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"); <br> 
+        [temp * 50];
+      </span>
     </p>
+
+
 </article>
+
+
+
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
 
