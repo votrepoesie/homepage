@@ -134,6 +134,12 @@ a {
     color: thistle;
 }
 
+iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    height: 450px;
+}
+
 /* thank you w3school */
 #myBtn {
     display: none; /* Hidden by default */
