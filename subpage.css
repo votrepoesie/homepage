@@ -12,8 +12,7 @@ body {
 
 #header {
     width: 100%;
-    height: 12vh;
-    background: black;
+    height: 15vh;
     background-size: cover;
     background-position: center;
 }
@@ -113,7 +112,6 @@ figcaption {
     margin: 50px auto;
     grid-gap: 10px 50px;
     grid-template-columns: 3fr 12fr 3fr;
-    /* text-align: center; */
 }
 
 .post > * {
@@ -121,7 +119,7 @@ figcaption {
 }
 
 img {
-    padding: 15px 0;
+    /* padding: 15px 0; */
     max-width: 100%;
 }
 
