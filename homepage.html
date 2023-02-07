@@ -14,19 +14,20 @@
     <div id="header">
         <div class="container">
             <nav>
+                <!-- LOGO LOGO LOGO PUT LOGO HERE -->
                 <img src="images/logo.png" class="logo">
-                <!-- placeholder for actual logo -->
                 <ul>
-                    <li><a href="index.html">home</a></li>
+                    <li><a href="homepage.html">home</a></li>
                     <li><a href="grid-gallery.html">portfolio</a></li>
                     <li><a href="about.html">about</a></li>
-                    <!-- <li><a href="contact.html">contact</a></li> -->
                 </ul>
             </nav>
             <div class="header-text">
                 <p>nice to meet you :)</p>
                 <h1 id="change-color">I draw, design, code, and make things.</h1>
                 <!-- add span tag to change text color -->
+                <!-- <br> -->
+                <!-- <img class="gif" src="images/blinkingheart.gif"> -->
             </div>
         </div>
     </div>
@@ -34,12 +35,9 @@
 <script>
 
 const tick = () => {
-    console.log("hello")
-    // document.body.style.background = "rgb("+(Math.random()*255)+","+(Math.random()*255)+","+(Math.random()*255)+")"
-    // document.body.style.background = "rgb("+(Math.random()*255)+", 150, 230)"
-
     document.getElementById('change-color').style.color = "rgb("+(Math.random()*255)+", 180, 230)"
-    setTimeout(tick, 400) //thank you marc for writing this piece of color-changing code!
+    document.getElementById('change-color').style.transition = '0.5s'
+    setTimeout(tick, 300)
 }
 
 tick()
