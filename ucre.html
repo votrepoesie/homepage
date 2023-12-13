@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ux design</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="subpage.css">
+    <script src="https://kit.fontawesome.com/ee186c3457.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="grid-gallery.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<article class="post">
+    <h2 id="change-color">
+        Smart Loading Zone Redesign
+        <br>....................
+    </h2>
+
+    <h4>An Unfiltered Diary</h4>
+    <p>
+        You are driving down the street and notice a purple curb. What the heck is this? Did they run out of yellow paint? 
+        <br><br>
+        Purple curbs in Pittsburgh stand for Smart Loading Zones, which aim to reduce vehicle emissions. They were strategically placed in streets that experienced double parking and traffic congestion, and they replaced regular, unpaid loading zones. 
+        <br><br>
+        Thus, four graduate students embarked on a journey to make curb-side management <span class="strike-through">great again</span> moderately more acceptable to everyday people like you and me. 
+        <span>Because nobody likes parking, and nobody likes to pay for parking.</span>
+    </p>
+
+    <h4>8/27 - learning goals</h4>
+    <p>
+        I submitted three learning goals for the class:
+        <br><br>
+        <span>1.</span> As a designer, I want to familiarize myself with research methods to better understand the needs of researchers and be an empathetic teammate.</li>
+        <br><br>  
+        <span>2.</span> I want to be able to write research objectives and match the appropriate research methods to those objectives.</li>
+        <br><br>   
+        <span>3.</span> I'm interested in both designing for nonprofits and emerging technologies, so I hope to learn how research can help bridge the needs of different entities.</li> 
+    </p>
+
+    <h4>9/19 - compromise over collaboration?</h4>
+    <p>Today I learned about my conflict style – I’m mostly a compromiser but I don’t like asking for help. Not exactly shocking. I will keep this in mind and be open about needing help, if this becomes an issue. </p>
+    
+    <h4>9/26 - bringer of… icebreaker</h4>
+    <p>
+        My teammates are lovely and some of them seem very experienced in research. I’m hoping to learn from them, since I’m more of a designer. I told them I’ve collected a lot of icebreakers for team meetings from previous experiences, so I’m in-charge of the vibes. 
+        <br><br>
+        We started doing data analysis and I’m surprisingly very good at Excel? Thank you, previous internship at auction house, my hours of inputting competitor analysis data did not go to waste. I’m starting to understand the workstyles of my teammates, and I’m definitely the most talkative one. My new role is to make sure everyone is able to communicate their ideas, since I tend to speak my mind as soon as I think of something. 
+        <br><br>
+        I also remind them to drink water.
+        <br><br>
+        <img src="images/UCRE/drink-water-meme.jpeg">
+    </p>
+
+    <h4>
+        10/30 - she is for the streets
+    </h4>
+    <p>
+        User research is getting me out of my comfort zone. As a previous art history student, I didn’t need to do interviews with strangers! I just stare at an artwork really hard and flip through a bunch of books and spend 20 hours in the library… But user research is also fun and rewarding because I get answers I don’t expect. In moments like this, I thank myself for having read this book on good journalism. 
+        <br><br>
+        <img src="images/UCRE/">
+        I may not be good at writing a research plan yet, since I’m still learning the methodologies and lingos of the field, but affinity clustering… This is my jam. I like looking at quotes and summarize findings and extract insights from them, brings me back to art history research… 
+    </p>
+
+    <h4>11/14 - brain too smooth</h4>
+    <p>
+        I can’t believe my proudest contribution so far is <span>adding purple lights to the purple curb!</span> I came up with it during Crazy Eights because I was literally at my wit’s end. Therefore, I was honored, touched, and deeply concerned that my teammates took it seriously. I guess I’m infecting others with my smooth brain?
+        <br><br>
+        <img src="images/UCRE/smooth-brain.png">
+    </p>
+
+    <h4>
+        11/21 - never drawn a road sign before, kinda weird
+    </h4>
+    <p>
+        I’m getting more confident at research! We were going to test the low-fi prototype, and I suggested we test both our prototype and a low-fi rendition of the current SLZ sign for comparison (control variable) – because I know my scientific methods! I also drew both the signs and started embracing my designer role again. 
+        <span>Never drawn road signs before, but there is a first time to everything.</span> 
+        <br><br>
+        <img src="images/UCRE/lofi-signs.png">
+    </p>
+   
+    <h4>
+        <br><br>
+        12/8 - purple rain
+    </h4>
+    <p>
+        x
+    </p>
+    <img>
+
+</article>
+
+</body>
+
+<script>
+    //thank you marc for teaching me the color-changing code!
+    const tick = () => {
+        console.log("hello")
+        document.getElementById('change-color').style.color = "rgb("+(Math.random()*255)+", 180, 230)"
+        setTimeout(tick, 400) 
+    }
+    
+    tick()
+    
+    //thank you w3schools for the button!
+    
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+</script>
